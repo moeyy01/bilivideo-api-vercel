@@ -20,7 +20,7 @@
       const pair = params[i].split('=')
       map[pair[0]] = pair[1]
     }
-    fetch(`./?av=${map['av']}&bv=${map['bv']}&p=${map['p']}&format=mp4`).then(res => {
+    fetch(`./?av=${map['av']}&bv=${map['bv']}&p=${map['p']}&q=${map['q']}&format=mp4`).then(res => {
       if (res.ok) {
         res.json().then(data => {
           new DPlayer({
