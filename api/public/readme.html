@@ -31,7 +31,7 @@
 
   <script src="https://acdn.moeyy.cn/jsdelivr/npm/marked/marked.min.js"></script>
   <script>
-    fetch('./README.md?2').then(res => {
+    fetch('./README.md').then(res => {
       if (res.ok) {
         res.text().then(text => {
           document.getElementById('content').innerHTML = marked.parse(text)
