@@ -5,8 +5,8 @@
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>bilibili-video</title>
-  <link rel="shortcut icon" href="https://mcdn.moeyy.cn/bili-video/favicon.png">
-  <link rel="stylesheet" href="https://acdn.moeyy.cn/jsdelivr/npm/github-markdown-css/github-markdown.min.css" />
+  <link rel="shortcut icon" href="https://cdn.moeyy.cn/bili-video/favicon.png">
+  <link rel="stylesheet" href="https://cdn.moeyy.cn/jsdelivr/npm/github-markdown-css/github-markdown.min.css" />
   <style>
     .markdown-body {
       box-sizing: border-box;
@@ -29,9 +29,9 @@
     <div id="content"></div>
   </article>
 
-  <script src="https://acdn.moeyy.cn/jsdelivr/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.moeyy.cn/jsdelivr/npm/marked/marked.min.js"></script>
   <script>
-    fetch('https://mcdn.moeyy.cn/bili-video/README.md').then(res => {
+    fetch('https://cdn.moeyy.cn/bili-video/README.md').then(res => {
       if (res.ok) {
         res.text().then(text => {
           document.getElementById('content').innerHTML = marked.parse(text)
